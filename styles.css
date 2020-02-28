@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --blue: #3B8ACF;
+  --light-blue: #96cbf3;
+  --grey: #B5B3B1;
+  --black: #1C1C1C;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('./img/background.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  background: white;
+  padding: 2.2rem;
+  border-radius: 4px;
+  box-shadow: 0px 3px 8px #00000026;
+  margin: 0.5rem;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.card__header .line {
+  width: 22px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--light-blue);
+  opacity: 0.5;
+}
+
+.city-code {
+  font-family: 'Prompt';
+  font-size: 2rem;
+  color: var(--blue);
+}
+
+.city-name {
+  font-size: 0.7rem;
+  color: var(--grey);
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  position: relative;
+  top: -5px;
+}
+
+.flight-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.flight-info > div {
+  flex: 0.5;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.title {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--grey);
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.passenger-info {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.qr img {
+  display: block;
+  width: 80%;
+}
+
+.qr {
+  display: flex;
+  justify-content: center;
+}
+
+.info, .qr {
+  flex: 1;
+}
+
+@media only screen and (max-width: 667px) {
+  .card {
+    padding: 1rem;
+  }
+
+  :root {
+    font-size: 0.9rem;
+  }
+}
